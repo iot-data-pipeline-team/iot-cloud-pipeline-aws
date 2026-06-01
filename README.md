@@ -59,7 +59,8 @@ Tableau Dashboard
 ## Project Components
 
 ### Producer
-![alt text](<Screenshot (1856).png>)
+<img width="1920" height="1080" alt="Screenshot (1856)" src="https://github.com/user-attachments/assets/a6061aa5-efd2-4b46-82d7-7e3e8b1d3eea" />
+
 The producer simulates IoT sensor telemetry data.
 
 Generated attributes:
@@ -74,7 +75,8 @@ Data is pushed to Amazon Kinesis every 2 seconds.
 ---
 
 ### Streaming Layer
-![alt text](<Screenshot (1859).png>)
+<img width="1920" height="1080" alt="Screenshot (1859)" src="https://github.com/user-attachments/assets/7d104def-6207-4ef3-8a61-7c76ea6f49d0" />
+
 Amazon Kinesis Data Streams receives incoming sensor events and acts as the real-time ingestion layer.
 
 Stream Name:
@@ -84,7 +86,8 @@ iot-stream
 ---
 
 ### Processing Layer
-![alt text](<Screenshot (1857).png>)
+<img width="1920" height="1080" alt="Screenshot (1857)" src="https://github.com/user-attachments/assets/6f40bb2a-a39c-4c63-a3ff-65bd3f24bd43" />
+
 AWS Lambda consumes records from Kinesis.
 
 Processing steps:
@@ -100,7 +103,8 @@ iot-consumer
 ---
 
 ### Data Lake
-![alt text](<Screenshot (1858).png>)
+<img width="1920" height="1080" alt="Screenshot (1858)" src="https://github.com/user-attachments/assets/a3fdc73b-69a8-4091-9c06-6077febc6426" />
+
 Amazon S3 stores incoming telemetry as JSON files.
 
 Folder Structure:
@@ -110,7 +114,8 @@ iot-data/
 ---
 
 ### Analytics Layer
-![alt text](<Screenshot (1854).png>)
+<img width="1920" height="1080" alt="Screenshot (1854)" src="https://github.com/user-attachments/assets/d4c46f00-a22b-4147-bfe3-be60cff8bacc" />
+
 Amazon Athena is used to query sensor data directly from S3.
 
 Database:
@@ -130,7 +135,8 @@ LIMIT 10;
 ---
 
 ### Visualization Layer
-![alt text](<Screenshot (1853).png>)
+<img width="1920" height="1080" alt="Screenshot (1853)" src="https://github.com/user-attachments/assets/b921ae51-1c1a-47b1-bebc-1ef44c2e6272" />
+
 Tableau connects to Athena using the Amazon Athena ODBC Driver.
 
 Dashboard visualizations include:
